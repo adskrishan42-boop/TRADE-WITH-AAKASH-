@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +21,6 @@
     --b: #7855ff;
     --bg1: #080b18;
     --bg2: #050711;
-    --card1: rgba(20, 29, 58, .95);
-    --card2: rgba(8, 12, 27, .98);
     --text: #fff;
     --muted: #b9c8e8;
     --line: rgba(0, 212, 255, .3);
@@ -49,7 +48,9 @@ body {
     padding: 30px 22px 25px;
     border-radius: 30px;
     border: 1px solid var(--line);
-    background: linear-gradient(145deg,var(--card1),var(--card2));
+    background: linear-gradient(145deg,
+        rgba(20,29,58,.95),
+        rgba(8,12,27,.98));
     box-shadow: 0 30px 90px rgba(0,0,0,.5),
                 0 0 40px rgba(0,212,255,.1);
     backdrop-filter: blur(20px);
@@ -79,9 +80,6 @@ body {
     height: 118px;
     margin: 5px auto 22px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: 4px solid var(--a);
     outline: 4px solid rgba(0,212,255,.2);
     box-shadow: 0 0 35px rgba(0,212,255,.4);
@@ -93,6 +91,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     border-radius: 50%;
 }
 
@@ -215,11 +214,12 @@ h1 {
 
 <main class="container">
 
-    <div class="badge">✦ OFFICIAL TELEGRAM CHANNEL ✦</div>
+    <div class="badge">
+        ✦ OFFICIAL TELEGRAM CHANNEL ✦
+    </div>
 
     <div class="icon">
-        <img src="logo.png" alt="TRADE WITH AAKASH Logo"
-        onerror="this.style.display='none'">
+        <img src="logo.png" alt="TRADE WITH AAKASH Logo">
     </div>
 
     <h1>TRADE WITH AAKASH</h1>
@@ -228,7 +228,9 @@ h1 {
         Welcome to TRADE WITH AAKASH Official Channel
     </div>
 
-    <div id="members">JOIN OUR COMMUNITY</div>
+    <div id="members">
+        JOIN OUR COMMUNITY
+    </div>
 
     <a id="jbtn"
        href="https://t.me/+_cCENFhuKhM2M2Fl"
@@ -238,22 +240,27 @@ h1 {
     </a>
 
     <div class="features">
+
         <div class="feature">
             <b>OFFICIAL</b>
             <span>CHANNEL</span>
         </div>
+
         <div class="feature">
             <b>INSTANT</b>
             <span>ACCESS</span>
         </div>
+
         <div class="feature">
             <b>FREE</b>
             <span>JOINING</span>
         </div>
+
     </div>
 
     <div class="footer">
-        Opens Telegram • Tap the button to join TRADE WITH AAKASH
+        Opens Telegram • Tap the button to join
+        TRADE WITH AAKASH
     </div>
 
 </main>
